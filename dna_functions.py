@@ -1,4 +1,5 @@
 #This variable is used in the code ahead. I'm puting it up here just in case.
+#A nucleotide is a 
 nucleotide = ["A", "T", "C", "G"] 
 
 #This function is for returning the dna sequence length.
@@ -28,18 +29,11 @@ def contains_sequence(dna1, dna2):
         return False
 
 #This is for seeing if the dna sequence is valid (it contains just the defined nucleotides (if they are in lowercase it also returns False)).
-def is_valid_sequence(dna):
-    for char in dna:
-        valid_sequence = True
-        if char in "ATCG":
-            valid_sequence == True
-        else:
-            valid_sequence == False
-            return False
-    if valid_sequence == True:
-        return True
-    elif valid_sequence == False:
-        return False
+def is_valid_sequence(adn):
+for char in adn:
+   if char not in "ATGC":
+     return false
+return true
 
 #insert_sequence("CCGG", "AT", 2) must be equal to "CCATGG"
 #insert_sequence("CCGG", "AT", 0) must be equal to "ATCCGG"
